@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>ReactRestaurant</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= yield %>
+
+      <nav class="top-bar foundation-bar" data-topbar  role="navigation">
+          <ul class="title-area">
+              <li class="name">
+                  <h1><a href="/">Restful-rants</a>
+                  </h1>
+              </li>
+          </ul>
+          <section class="top-bar-section">
+              <li><%= link_to 'manage restaurants', '/admin' %></li>
+          </section>
+      </nav>
+
+      <div class="row">
+          <div class="col-lg-12">
+              <%= yield %>
+          </div>
+      </div>
+
+
   </body>
 </html>

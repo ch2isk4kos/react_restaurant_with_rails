@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # ADDITIONAL GEMS
 gem 'ancestry'
 gem 'rails_admin'
+gem 'foundation-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

@@ -24,4 +24,16 @@
 
 11. $ rake db:migrate
 
-12. $ rails g migration add_restaurant_id_to_comments restaurant_id:integer 
+12. $ rails g migration add_restaurant_id_to_comments restaurant_id:integer
+
+13. $ rake db:migrate
+
+14. $ rails g controller Restaurants
+
+15. add foundation-rails to Gemfile
+
+16. $ bundle install
+
+17. $ rails g foundation:install
+
+18. add Restaurant index action && view file 

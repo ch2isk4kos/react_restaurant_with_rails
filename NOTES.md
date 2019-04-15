@@ -42,3 +42,14 @@
 19. create restaurant show page view file
 
 20. add #show action to restaurants_controller.rb
+
+21. create a comment component with rails on restaurant show page
+    - add react-rails to Gemfile
+    - $ bundle install
+    - $ rails g react:install   # Rails generator
+
+22. add component to app/assets/javascripts/components/comment.js.jsx
+
+#23. add component to restaurant show page
+
+24. 

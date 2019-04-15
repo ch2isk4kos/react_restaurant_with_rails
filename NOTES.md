@@ -12,6 +12,7 @@
 5. $ rake db:migrate
 
 6. $ rails g rails_admin:install
+    - localhost:3000/admin
 
 7. $ rails g model Comment author:string body:text rank:integer
 
@@ -36,4 +37,8 @@
 
 17. $ rails g foundation:install
 
-18. add Restaurant index action && view file 
+18. add Restaurant index action && view file
+
+19. create restaurant show page view file
+
+20. add #show action to restaurants_controller.rb
